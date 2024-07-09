@@ -1,0 +1,15 @@
+<h1>Lista de articulos disponibles en el servidor</h1>
+<br />
+@for (articulo of articulos; track $index) {
+    <mat-card class="example-card" appearance="outlined" (click)="openDialog(articulo.id)">
+        <mat-card-header>
+            <mat-card-title>{{articulo.title}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>{{articulo.body}}</p>
+        </mat-card-content>
+    </mat-card>
+    
+}
+
+

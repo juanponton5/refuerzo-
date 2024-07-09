@@ -1,0 +1,17 @@
+<h2 mat-dialog-title>Titulo del articulo: {{data.title}}</h2>
+<mat-dialog-content>
+<mat-card class="example-card" appearance="outlined" >
+    <mat-card-header>
+        <img src="https://w7.pngwing.com/pngs/364/1021/png-transparent-newspaper-computer-icons-article.png" 
+        height="100"
+        width="100">
+    </mat-card-header>
+    <mat-card-content>
+        <p>{{data.body}}</p>
+    </mat-card-content>
+</mat-card>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button (click)="close()">Cerrar</button>
+    <button mat-button (click)="close()">Ok</button>
+</mat-dialog-actions>
